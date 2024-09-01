@@ -1,10 +1,161 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-body{
-    background-color: #010814;
+:root {
+    --text-color: #fff;
 }
 
-.header img{
-    width: 200px;
+html {
+    scroll-behavior: smooth;
+}
 
+body {
+    background-color: #010814;
+    font-family: Outfit;
+    padding: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+
+
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+.header img {
+    width: 140px;
+    border-radius: 20px;
+}
+
+.header .right {
+    display: flex;
+    gap: 2rem;
+    font-size: 30px;
+}
+
+
+
+
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.home .left {
+    margin-top: 100px;
+    color: white;
+
+}
+
+.home .left h1 {
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.home .left p {
+    font-size: 30px;
+    font-weight: 400;
+    z-index: 10;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.btns-home button {   
+    font-family: Outfit;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+.contact {
+    padding: 15px 25px;
+    background-color: #6593EA;
+    margin-right: 80px;
+    border: none;
+    color: white;
+    z-index: 10;
+}
+.view-portfolio{
+    padding: 13px 23px;
+    z-index: 10;
+    border: 4px solid #AE63FD;
+    
+}
+.home-img {
+    width: 800px;
+    position: relative;
+    right: 40px;
+    top: 100px;
+    z-index: 10;
+}
+
+.shape {
+    filter: blur(80px);
+    border-radius: 50%;
+}
+
+.shape-contact {
+    background: #63A1FD;
+    width: 160px;
+    height: 120px;
+    position: absolute;
+    left: 55px;
+    top: 655px;
+    z-index: 1;
+}
+
+.shape-portfolio{
+    background: #AE63FD;
+    width: 250px;
+    height: 120px;
+    position: absolute;
+    left: 250px;
+    top: 655px;
+    z-index: 1;
+}
+.shape-home-img{
+    background: #AE63FD;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    right: 250px;
+    top: 400px;
+    z-index: 1;
+}
+.text{
+    color: white;
+    margin-top: 169px;
+}
+.text h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.text p{
+    font-size: 38px;
+}
+
+.services{
+    margin-top: 150px;
+
+}
+
+.services h1{
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
 }
