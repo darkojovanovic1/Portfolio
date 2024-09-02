@@ -12,6 +12,7 @@ body {
     background-color: #010814;
     font-family: Outfit;
     padding: 50px;
+    overflow-x: hidden;
 }
 
 a {
@@ -19,9 +20,11 @@ a {
     color: var(--text-color);
 }
 
-
-
-
+.shape {
+    filter: blur(80px);
+    border-radius: 50%;
+}
+/* Universal classes */
 
 
 .header {
@@ -43,10 +46,6 @@ a {
     font-size: 30px;
 }
 
-
-
-
-
 .home {
     display: flex;
     justify-content: space-between;
@@ -57,6 +56,26 @@ a {
     margin-top: 100px;
     color: white;
 
+}
+
+.shape-contact {
+    background: #63A1FD;
+    width: 160px;
+    height: 120px;
+    position: absolute;
+    left: 55px;
+    top: 655px;
+    z-index: 1;
+}
+
+.shape-portfolio {
+    background: #AE63FD;
+    width: 250px;
+    height: 120px;
+    position: absolute;
+    left: 250px;
+    top: 655px;
+    z-index: 1;
 }
 
 .home .left h1 {
@@ -72,7 +91,7 @@ a {
     margin-bottom: 100px;
 }
 
-.btns-home button {   
+.btns-home button {
     font-family: Outfit;
     font-size: 20px;
     font-weight: 500;
@@ -89,45 +108,15 @@ a {
     color: white;
     z-index: 10;
 }
-.view-portfolio{
+
+.view-portfolio {
     padding: 13px 23px;
     z-index: 10;
     border: 4px solid #AE63FD;
-    
-}
-.home-img {
-    width: 800px;
-    position: relative;
-    right: 40px;
-    top: 100px;
-    z-index: 10;
+
 }
 
-.shape {
-    filter: blur(80px);
-    border-radius: 50%;
-}
-
-.shape-contact {
-    background: #63A1FD;
-    width: 160px;
-    height: 120px;
-    position: absolute;
-    left: 55px;
-    top: 655px;
-    z-index: 1;
-}
-
-.shape-portfolio{
-    background: #AE63FD;
-    width: 250px;
-    height: 120px;
-    position: absolute;
-    left: 250px;
-    top: 655px;
-    z-index: 1;
-}
-.shape-home-img{
+.shape-home-img {
     background: #AE63FD;
     width: 400px;
     height: 300px;
@@ -136,26 +125,138 @@ a {
     top: 400px;
     z-index: 1;
 }
-.text{
+
+.home-img {
+    width: 800px;
+    position: relative;
+    right: 40px;
+    top: 100px;
+    z-index: 10;
+}
+
+.text {
     color: white;
     margin-top: 169px;
 }
-.text h1{
+
+.text h1 {
     font-size: 50px;
     font-weight: 600;
 }
-.text p{
+
+.text p {
     font-size: 38px;
 }
 
-.services{
+
+.services {
     margin-top: 150px;
 
 }
 
-.services h1{
+.services h1 {
     color: white;
     text-align: center;
     font-size: 45px;
     font-weight: 600;
+}
+
+
+
+.wcs {
+    margin-top: 150px;
+    color: white;
+
+}
+
+.wcs-top {
+    text-align: center;
+    position: relative;
+    bottom: -60px;
+}
+
+.wcs-top p {
+    font-size: 28px;
+    position: relative;
+    bottom: -20px;
+}
+
+.wcs-top h1 {
+    font-size: 48px;
+    font-weight: 600;
+
+}
+
+.wcs-content {
+    display: flex;
+    align-items: center;
+}
+
+.wcs-content h2 {
+    font-size: 25px;
+}
+
+.wcs-content .left img {
+    width: 700px;
+    z-index: 10;
+    position: relative;
+}
+
+.shape-wcs {
+    background: #DD5DB5;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 200px;
+    top: 1700px;
+    z-index: 1;
+}
+
+.wcs-content .right {
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    gap: 2rem;
+}
+
+.wcs-content .right div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.wcs-content .right img {
+    width: 100px;
+}
+
+.t2,
+.t3,
+.t4,
+.t5,
+.t6,
+.offset {
+    position: relative;
+}
+
+.offset {
+    left: -15px;
+}
+
+.t2 {
+    left: 30px;
+}
+
+.t3 {
+    left: -5px;
+}
+
+.t4 {
+    left: 45px;
+}
+
+.t5 {
+    left: -30px;
+}
+
+.t6 {
+    left: 30px;
 }
