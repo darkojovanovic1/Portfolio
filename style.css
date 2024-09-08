@@ -13,6 +13,7 @@ body {
     font-family: Outfit;
     padding: 50px;
     overflow-x: hidden;
+    color: white;
 }
 
 a {
@@ -105,7 +106,6 @@ a {
     background-color: #6593EA;
     margin-right: 80px;
     border: none;
-    color: white;
     z-index: 10;
 }
 
@@ -135,7 +135,6 @@ a {
 }
 
 .text {
-    color: white;
     margin-top: 169px;
 }
 
@@ -155,7 +154,6 @@ a {
 }
 
 .services h1 {
-    color: white;
     text-align: center;
     font-size: 45px;
     font-weight: 600;
@@ -165,7 +163,6 @@ a {
 
 .wcs {
     margin-top: 150px;
-    color: white;
 
 }
 
@@ -259,4 +256,87 @@ a {
 
 .t6 {
     left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+.contact-us {
+    
+    position: relative;
+    height: 200vh;
+    padding: 20px;
+}
+.crossed {
+    position: relative;
+    color: rgb(87, 87, 87);
+    overflow: hidden; 
+    font-size: 3rem;
+}
+.crossed:after {
+    content: '';
+    position: absolute;
+    top: 55%;
+    left: 0;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 0; 
+    transition: width 1s linear; 
+}
+.crossed.animated:after {
+    width: 420px; 
+}
+
+.new{
+    color: rgb(202, 202, 202);
+    font-size: 3rem;
+    margin-left: 30px;
+}
+
+.first-text{
+    font-size: 1.8rem;
+    margin-right: 50px;
+    margin-left: 30px;
+    text-align: left;
+}
+.second-text{
+    font-size: 1.8rem;
+    margin-right: 350px;
+    margin-top: 50px;
+    margin-left: 350px;
+    text-align: left;
+}
+.button-orbe-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.rainbow-contact{
+    z-index: 10;
+    position: relative;
+    background: linear-gradient(90deg, #AE63FD 0%, #30ACCB 100%);
+    font-size: 2rem;
+    font-family: outfit;
+    border: 1px solid black;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.contact-shape-rb{
+    background: linear-gradient(90deg, #AE63FD 0%, #2795B0 100%);
+    width: 260px;
+    height: 80px;
+    position: absolute;
+    left: 740px;
+    top: 510px;
+    z-index: 1;
 }
