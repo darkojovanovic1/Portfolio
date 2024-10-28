@@ -18,3 +18,35 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(element);
     });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.swiper', {
+        slidesPerView: 1,
+        spaceBetween: 32,
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        loop: true,
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 3,
+                
+                spaceBetween: 100,
+            },
+        },
+    });
+});
