@@ -28,10 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: 'auto',
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
         loop: true,
         breakpoints: {
             640: {

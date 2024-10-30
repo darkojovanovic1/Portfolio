@@ -461,3 +461,58 @@ a {
   .portfolio-card .third:hover{
     border: 3px solid #00ada4;
   }
+
+
+
+  .order-website {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 2rem;
+  }
+  .order-website div{
+    margin-top: 300px;
+    width: 400px;
+    height: 500px;
+  }
+  .discussion{
+    background-image: url("img/order1.png");
+    background-size: cover;
+    border-radius: 2rem;
+
+  }
+  .discussion, .content, .launch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+  }
+  .discussion h2, .content h2, .launch h2{
+    font-size: 32px;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  }
+
+  .discussion p, .content p, .launch p{
+ font-size: 24px;
+ width: 300px;
+ font-weight: 600;
+ text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+
+  }
+
+  .content{
+    background-image: url("img/order2.png");
+    background-position: -300px;
+    background-size: cover;
+    border-radius: 2rem;
+
+    
+  }
+  .launch{
+    background-image: url("img/order3.png");
+    background-position: -200px;
+    background-size: cover;
+
+    border-radius: 2rem;
+
+  }
