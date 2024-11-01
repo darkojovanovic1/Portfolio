@@ -46,3 +46,9 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 });
+
+let gmail = document.querySelector(".fa-envelope");
+gmail.addEventListener('click', ()=>{
+    window.open('https://mail.google.com/mail/?view=cm&fs=1&to=PCSdevelopment@gmail.com', '_blank');
+
+})
