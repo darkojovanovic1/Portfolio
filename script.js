@@ -50,5 +50,21 @@ document.addEventListener('DOMContentLoaded', function () {
 let gmail = document.querySelector(".fa-envelope");
 gmail.addEventListener('click', ()=>{
     window.open('https://mail.google.com/mail/?view=cm&fs=1&to=PCSdevelopment@gmail.com', '_blank');
-
 })
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sr = ScrollReveal({
+        origin: 'top',
+        distance: '60px',
+        duration: 2200,
+        delay: 400,
+        
+    });
+    sr.reveal('.header, .unleashing, .wcs, .first-text, .second-text, .button-box, .portfolio, .content' );
+    sr.reveal('.unleashing-later, .providing, .new', {delay:500});
+    sr.reveal('.bottom', {delay:800, origin: 'bottom'});
+
+    sr.reveal('.left, .discussion, .logo-footer, .copyright', {origin:'left'});
+    sr.reveal('.right, .launch, .footer-content', {origin:'right'});
+});
