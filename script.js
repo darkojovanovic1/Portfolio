@@ -31,11 +31,11 @@ document.addEventListener('DOMContentLoaded', function () {
         loop: true,
         breakpoints: {
             640: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 20,
             },
             768: {
-                slidesPerView: 3,
+                slidesPerView: 2,
                 spaceBetween: 30,
             },
             1024: {
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 let gmail = document.querySelector(".fa-envelope");
 gmail.addEventListener('click', ()=>{
-    window.open('https://mail.google.com/mail/?view=cm&fs=1&to=PCSdevelopment@gmail.com', '_blank');
+    window.open('https://mail.google.com/mail/?view=cm&fs=1&to=pcs.development016@gmail.com', '_blank');
 })
 
 
