@@ -95,7 +95,6 @@ a {
 
 }
 
-/*------------------------------------------------------------*/
 
 .home-img {
     width: 800px;
@@ -117,6 +116,7 @@ a {
 .text p {
     font-size: 38px;
 }
+
 
 
 .services {
@@ -370,22 +370,6 @@ a {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .portfolio-card {
     background-color: hsla(228, 66%, 45%, .1);
     border-radius: 1rem;
@@ -441,7 +425,7 @@ a {
     border: 4px solid #00ada4;
 }
 
-
+/*------------------------------------------------------------*/
 
 
 
@@ -533,7 +517,7 @@ a {
     z-index: 2;
     /* Zadržava sadržaj iznad tamnog sloja */
 }
-
+/*-------------------------------------------------------------------*/
 
 footer {
     height: 500px;
@@ -592,46 +576,228 @@ footer {
     font-weight: 700;
 
 }
+
 ::-webkit-scrollbar {
     width: .6rem;
     background-color: hsl(219, 4%, 16%);
     border-radius: 1rem;
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background-color: hsl(219, 4%, 24%);
     border-radius: 1rem;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+::-webkit-scrollbar-thumb:hover {
     background-color: hsl(219, 4%, 32%);
-  }
-  
+}
+
+
+
+
+
+
+
 
 
 @media (max-width: 1024px) {
+    .header .right {
+        font-size: 25px;
+        gap: 1.5rem;
+    }
+
+    .header img {
+        width: 120px;
+    }
+
+    .home .left h1 {
+        font-size: 48px;
+    }
+
+    .home .left p {
+        font-size: 26px;
+        margin-bottom: 80px;
+    }
+
+    .home-img {
+        width: 650px;
+    }
+
+    .text h1 {
+        font-size: 45px;
+    }
+
+    .text p {
+        font-size: 32px;
+    }
+
+    .all-services div {
+        width: 300px;
+        height: 380px;
+    }
+
+    .services h1 {
+        font-size: 40px;
+    }
+
+    .all-services div h1 {
+        font-size: 32px;
+    }
+
+    .all-services div p {
+        font-size: 18px;
+    }
+
+    .all-services div button {
+        font-size: 16px;
+    }
+
+    .wcs-top p {
+        font-size: 24px;
+    }
+
+    .wcs-top h1 {
+        font-size: 40px;
+    }
+
+    .wcs-content .left img {
+        width: 600px;
+    }
+
+    .wcs-content .right {
+        grid-template-columns: repeat(2, 350px);
+        gap: 1.5rem;
+    }
+
+    .crossed,
+    .new {
+        font-size: 2.5rem;
+    }
+
+    .first-text,
+    .second-text {
+        font-size: 1.6rem;
+        margin: 20px 40px;
+    }
+
+    .rainbow-contact {
+        font-size: 1.8rem;
+        padding: 8px 25px;
+    }
+
+    .portfolio-card {
+        height: 270px;
+        width: 270px;
+    }
+
+    .portfolio-title {
+        font-size: 22px;
+    }
+
+    .portfolio-card button {
+        font-size: 16px;
+        width: 160px;
+        padding: 12px 20px;
+    }
+
+    .order-website {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order-website div {
+        width: 350px;
+        height: 450px;
+        margin-top: 50px;
+    }
+
+    .discussion h2, .content h2, .launch h2 {
+        font-size: 28px;
+    }
+
+    .discussion p, .content p, .launch p {
+        font-size: 20px;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .logo-footer img {
+        width: 120px;
+        height: 120px;
+        margin-left: 60px;
+        margin-top: 40px;
+    }
+
+    .footer-content h2 {
+        font-size: 28px;
+    }
+
+    .footer-content a {
+        font-size: 20px;
+    }
+
+    .fa-envelope, .fa-instagram {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 768px) {
     .header {
         flex-direction: column;
         align-items: flex-start;
     }
 
     .header .right {
+        font-size: 22px;
         gap: 1rem;
-        font-size: 24px;
     }
 
-    .home-img {
-        width: 100%;
-        position: static;
-        margin-top: 20px;
+    .header img {
+        width: 100px;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home .left {
+        margin-top: 50px;
     }
 
     .home .left h1 {
-        font-size: 45px;
+        font-size: 42px;
     }
 
     .home .left p {
-        font-size: 25px;
+        font-size: 22px;
+        margin-bottom: 50px;
+    }
+
+    .btns-home button {
+        font-size: 18px;
+        margin-right: 20px;
+    }
+
+    .home-img {
+        width: 500px;
+        right: 0;
+        top: 50px;
+    }
+
+    .text h1 {
+        font-size: 38px;
+    }
+
+    .text p {
+        font-size: 28px;
     }
 
     .all-services {
@@ -641,74 +807,12 @@ footer {
 
     .all-services div {
         width: 90%;
-        margin-bottom: 20px;
-    }
-
-    .portfolio-card {
-        width: 90%;
-    }
-
-    .portfolio h1 {
-        font-size: 36px;
-    }
-}
-
-@media (max-width: 720px) {
-    .home .left h1 {
-        font-size: 35px;
-    }
-
-    .home .left p {
-        font-size: 22px;
-    }
-
-    .all-services div {
         height: auto;
-        width: 100%;
-    }
-
-    .wcs-content {
-        flex-direction: column;
-    }
-
-    .wcs-content .right {
-        grid-template-columns: 1fr;
-        /* Stack items vertically */
-    }
-
-    .text h1 {
-        font-size: 36px;
-    }
-
-    .text p {
-        font-size: 28px;
-    }
-
-    .portfolio-card {
-        height: auto;
-        /* Allow the height to adjust based on content */
-    }
-}
-
-@media (max-width: 580px) {
-    .header img {
-        width: 120px;
-    }
-
-    .header .right {
-        font-size: 20px;
-    }
-
-    .home .left h1 {
-        font-size: 30px;
-    }
-
-    .home .left p {
-        font-size: 20px;
+        padding: 20px;
     }
 
     .services h1 {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .all-services div h1 {
@@ -719,109 +823,448 @@ footer {
         font-size: 16px;
     }
 
-    .portfolio h1 {
-        font-size: 38px;
+    .all-services div button {
+        font-size: 15px;
     }
 
-    .portfolio p {
-        font-size: 28px;
-    }
-    .crossed {
-        font-size: 36px;
+    .wcs-content {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .crossed.animated:after {
-        width: 320px;
-    }
-
-    .header .right {
-        display: none;
-    }
-
-    .header .left {
-        margin: auto;
-    }
-   
-}
-
-@media (max-width: 480px) {
-    body {
-        padding: 20px;
-    }
-
-    .home .left h1 {
-        font-size: 28px;
+    .wcs-content .left img {
+        width: 450px;
         margin-bottom: 20px;
     }
 
-    .home .left p {
-        font-size: 22px;
-    }
-    .home img{
-        display: none;
-    }
-    .all-services div {
-        width: 100%;
-        padding: 10px;
-        height: 320px;
-    }
-    .all-services div p{
-        font-size: 15px;
-    }
-    .wcs-content .left img {
-        width: 100%;
+    .wcs-content .right {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
-    .portfolio h1 {
+    .wcs-content .right div {
+        justify-content: flex-start;
+    }
+
+    .wcs-content .right img {
+        width: 80px;
+    }
+
+    .wcs-content h2 {
+        font-size: 22px;
+    }
+
+    .wcs-top h1 {
+        font-size: 36px;
+    }
+
+    .wcs-top p {
+        font-size: 20px;
+    }
+
+    .crossed,
+    .new {
+        font-size: 2.2rem;
+    }
+
+    .first-text,
+    .second-text {
+        font-size: 1.5rem;
+        margin: 20px 30px;
+        text-align: center;
+    }
+
+    .rainbow-contact {
+        font-size: 1.6rem;
+        padding: 8px 20px;
+    }
+
+    .portfolio p {
         font-size: 24px;
     }
 
+    .portfolio h1 {
+        font-size: 40px;
+    }
+
+    .portfolio-card {
+        height: 250px;
+        width: 250px;
+    }
+
+    .portfolio-title {
+        font-size: 20px;
+    }
 
     .portfolio-card img {
         height: 250px;
     }
-    .portfolio-title {
-        font-size: 16px;
+
+    .portfolio-card button {
+        font-size: 14px;
+        width: 150px;
+        padding: 10px 18px;
     }
 
-    .crossed {
-        font-size: 32px;
+    .order-website div {
+        width: 300px;
+        height: 400px;
     }
 
-    .crossed.animated:after {
-        width: 280px;
+    .discussion h2, .content h2, .launch h2 {
+        font-size: 26px;
+    }
+
+    .discussion p, .content p, .launch p {
+        font-size: 18px;
+        width: 250px;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-footer img {
+        width: 100px;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    .footer-content h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .footer-content a {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .fa-envelope, .fa-instagram {
+        font-size: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 580px) {
+    .header {
+        padding: 10px;
     }
 
     .header .right {
         display: none;
     }
 
-    .header .left {
-        margin: auto;
+    .header img {
+        width: 90px;
     }
-    .btns-home button{
-        width: 180px;
+
+    .home .left h1 {
+        font-size: 35px;
     }
-    .view-portfolio{
-        float: right;
+
+    .home .left p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .home-img {
+        width: 400px;
+    }
+
+    .text h1 {
+        font-size: 32px;
+    }
+
+    .text p {
+        font-size: 24px;
+    }
+
+    .all-services div {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .services h1 {
+        font-size: 30px;
+    }
+
+    .all-services div h1 {
+        font-size: 24px;
+    }
+
+    .all-services div p {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .all-services div button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .wcs-content .left img {
+        width: 350px;
+    }
+
+    .wcs-content .right img {
+        width: 70px;
+    }
+
+    .wcs-content h2 {
+        font-size: 20px;
+    }
+
+    .wcs-top h1 {
+        font-size: 32px;
+    }
+
+    .wcs-top p {
+        font-size: 18px;
+    }
+
+    .crossed,
+    .new {
+        font-size: 2rem;
+    }
+
+    .first-text,
+    .second-text {
+        font-size: 1.4rem;
+        margin: 15px 20px;
+    }
+
+    .rainbow-contact {
+        font-size: 1.4rem;
+        padding: 7px 15px;
+    }
+
+    .portfolio p {
+        font-size: 20px;
+    }
+
+    .portfolio h1 {
+        font-size: 36px;
+    }
+
+    .portfolio-card {
+        height: 230px;
+        width: 230px;
+    }
+
+    .portfolio-title {
+        font-size: 18px;
+    }
+
+    .portfolio-card img {
+        height: 230px;
+    }
+
+    .portfolio-card button {
+        font-size: 13px;
+        width: 140px;
+        padding: 8px 15px;
+    }
+
+    .order-website div {
+        width: 260px;
+        height: 350px;
+    }
+
+    .discussion h2, .content h2, .launch h2 {
+        font-size: 24px;
+    }
+
+    .discussion p, .content p, .launch p {
+        font-size: 16px;
+        width: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header .right {
+        display: none;
+
+    }
+
+    .header img {
+        width: 80px;
+    }
+
+    .home .left h1 {
+        font-size: 28px;
+    }
+
+    .home .left p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .btns-home button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .home-img {
+        width: 300px;
+        top: 20px;
+    }
+
+    .text h1 {
+        font-size: 28px;
+    }
+
+    .text p {
+        font-size: 20px;
+    }
+
+    .services h1 {
+        font-size: 28px;
+    }
+
+    .all-services div h1 {
+        font-size: 20px;
+    }
+
+    .all-services div p {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .all-services div button {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .wcs-content .left img {
+        width: 280px;
+    }
+
+    .wcs-content .right img {
+        width: 60px;
+    }
+
+    .wcs-content h2 {
+        font-size: 18px;
+    }
+
+    .wcs-top h1 {
+        font-size: 28px;
+    }
+
+    .wcs-top p {
+        font-size: 16px;
+    }
+
+    .wcs-content .right {
+        gap: 0.5rem;
+    }
+
+    .crossed,
+    .new {
+        font-size: 1.8rem;
+        margin-left: 10px;
+    }
+
+    .first-text,
+    .second-text {
+        font-size: 1.2rem;
+        margin: 10px 15px;
+    }
+
+    .rainbow-contact {
+        font-size: 1.2rem;
+        padding: 5px 10px;
+    }
+    .portfolio p {
+        font-size: 18px;
+    }
+
+    .portfolio h1 {
+        font-size: 32px;
+    }
+
+    .portfolio-card {
+        height: 200px;
+        width: 200px;
+    }
+
+    .portfolio-title {
+        font-size: 16px;
+    }
+
+    .portfolio-card img {
+        height: 200px;
+    }
+
+    .portfolio-card button {
+        font-size: 12px;
+        width: 130px;
+        padding: 7px 12px;
+    }
+
+    .order-website {
+        margin-top: 20px;
+    }
+
+    .order-website div {
+        width: 220px;
+        height: 320px;
         margin-top: 30px;
     }
-    .second-text{
-        display: none;
-    }
-    .wcs{
-        margin-top: -20px;
-    }
-    .order-website{
-        flex-direction: column;
-        column-gap: -100px;
-    }
-    .order-website div{
-        width: 300px;
-    }
-    footer{
-    display: grid;
 
-        grid-template-rows: 1fr 1fr;
+    .discussion h2, .content h2, .launch h2 {
+        font-size: 20px;
+    }
+
+    .discussion p, .content p, .launch p {
+        font-size: 14px;
+        width: 200px;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .logo-footer img {
+        width: 80px;
+        height: 80px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-content h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .footer-content a {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .fa-envelope, .fa-instagram {
+        font-size: 36px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .copyright {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 20px;
     }
 }
