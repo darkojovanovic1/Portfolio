@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 spaceBetween: 30,
             },
             1024: {
-                slidesPerView: 3,
+                slidesPerView: 2,
                 
                 spaceBetween: 100,
             },
@@ -52,6 +52,45 @@ gmail.addEventListener('click', ()=>{
     window.open('https://mail.google.com/mail/?view=cm&fs=1&to=pcs.development016@gmail.com', '_blank');
 })
 
+let rainbowContact = document.querySelector(".rainbow-contact");
+rainbowContact.addEventListener('click', ()=>{
+    window.open('https://mail.google.com/mail/?view=cm&fs=1&to=pcs.development016@gmail.com', '_blank');
+})
+
+
+
+let custom = document.querySelector(".custom-wd");
+custom.addEventListener('click', ()=>{
+    window.open('https://www.devstars.com/blog/the-science-behind-successful-custom-website-design/', '_blank');
+})
+
+let responsiveDiz = document.querySelector(".rsps-diz");
+responsiveDiz.addEventListener('click', ()=>{
+    window.open('https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/', '_blank');
+})
+
+let uxui = document.querySelector(".ux-ui");
+uxui.addEventListener('click', ()=>{
+    window.open('https://www.geeksforgeeks.org/principles-of-ui-ux-design/', '_blank');
+})
+
+let ecc = document.querySelector(".ecomc");
+ecc.addEventListener('click', ()=>{
+    window.open('https://onlinelibrary.wiley.com/doi/10.1155/2022/8572911', '_blank');
+})
+
+document.getElementById("e-car-dealership").addEventListener("click", function() {
+    // Putanja do foldera ili fajla
+    window.location.href = "projectsPortfolio/Tesla car design/index.html";
+});
+document.getElementById("real-estate").addEventListener("click", function() {
+    // Putanja do foldera ili fajla
+    window.location.href = "projectsPortfolio/Real Estate/index.html";
+});
+
+document.getElementById("e-commerce").addEventListener("click", function() {
+    window.location.href = "projectsPortfolio/Eccomerce/index.html";
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     const sr = ScrollReveal({

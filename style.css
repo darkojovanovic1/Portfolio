@@ -370,59 +370,74 @@ a {
 }
 
 
-.portfolio-card {
-    background-color: hsla(228, 66%, 45%, .1);
-    border-radius: 1rem;
-    height: 300px;
-    width: 300px;
-    transition: .4s;
+.portfolio-container {
+    width: 100%;
+    
+    margin: 50px auto;
+    position: relative;
+}
+
+.swiper-wrapper {
     display: flex;
-    flex-direction: column;
+}
+
+.portfolio-card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
 .portfolio-card:hover {
-    box-shadow: 0 12px 16px hsla(228, 66%, 45%, .1);
+    transform: scale(1.05);
 }
 
 .portfolio-card img {
-    height: 300px;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    border-bottom: 3px solid black;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-overlay {
+    opacity: 1;
 }
 
 .portfolio-title {
-    margin: auto;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-size: 24px;
-
-
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
-.portfolio-card .first,
-.second,
-.third {
-    color: rgb(0, 0, 0);
-    margin: 5px;
-    border: none;
-    border-radius: 1rem;
-    padding: 10px;
-    font-size: 18px;
+.view-code {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: 10px 20px;
     cursor: pointer;
-    padding: 13px 23px;
-    border: 4px solid #5400ad;
-    width: 180px;
-    margin: auto;
-    margin-bottom: 10px;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-.portfolio-card .second {
-    border: 4px solid #8500ad;
-}
-
-.portfolio-card .third {
-    border: 4px solid #00ada4;
+.view-code:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 /*------------------------------------------------------------*/
@@ -597,10 +612,18 @@ footer {
 
 
 
+@media (max-width:1800px) {
+    .wcs-icons div img{
+        max-width: 70px;
+        height: 70px;
+    }
+    .wcs-icons div h2{
+        font-size: 20px;
+    }
+}
 
 
-
-@media (max-width: 1024px) {
+@media (max-width: 1600px) {
     .header .right {
         font-size: 25px;
         gap: 1.5rem;
@@ -622,7 +645,9 @@ footer {
     .home-img {
         width: 650px;
     }
-
+    .btns-home button{
+        margin-top: 20px;
+    }
     .text h1 {
         font-size: 45px;
     }
@@ -630,10 +655,17 @@ footer {
     .text p {
         font-size: 32px;
     }
+    .all-services{
+    justify-content: space-evenly;
+        display: flex;
+        
 
+    }
     .all-services div {
         width: 300px;
         height: 380px;
+        margin-top: 30px;
+        margin: 10px;
     }
 
     .services h1 {
@@ -659,19 +691,28 @@ footer {
     .wcs-top h1 {
         font-size: 40px;
     }
+    .wcs-content{
+        display: grid;
 
+    }
+    .wcs-content .left {
+        margin: auto;
+    }
     .wcs-content .left img {
         width: 600px;
+        position: relative;
+        
     }
 
     .wcs-content .right {
+        margin: auto;
         grid-template-columns: repeat(2, 350px);
         gap: 1.5rem;
     }
 
     .crossed,
     .new {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
 
     .first-text,
@@ -686,8 +727,8 @@ footer {
     }
 
     .portfolio-card {
-        height: 270px;
-        width: 270px;
+        height: 420px;
+        width: 420px;
     }
 
     .portfolio-title {
@@ -706,17 +747,17 @@ footer {
     }
 
     .order-website div {
-        width: 350px;
-        height: 450px;
+        width: 550px;
+        height: 680px;
         margin-top: 50px;
     }
 
     .discussion h2, .content h2, .launch h2 {
-        font-size: 28px;
+        font-size: 50px;
     }
 
     .discussion p, .content p, .launch p {
-        font-size: 20px;
+        font-size: 35px;
     }
 
     footer {
@@ -745,6 +786,30 @@ footer {
     .fa-envelope, .fa-instagram {
         font-size: 48px;
     }
+    .crossed:after {
+        height: 5px;
+    }
+    
+    .crossed.animated:after {
+        width: 490px;
+    }
+    .services-footer{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 1200px){
+    body{
+        margin: 40px;
+    }
+    .all-services{
+        display: grid;
+            grid-template-columns: repeat(2, 400px);
+    
+        }
+        
+
 }
 
 @media (max-width: 768px) {
@@ -954,6 +1019,63 @@ footer {
         display: block;
         margin-top: 20px;
     }
+    .crossed:after {
+        height: 4px;
+    }
+    
+    .crossed.animated:after {
+        width: 280px;
+    }
+    .all-services div{
+        margin-bottom: 20px;
+    }
+
+    footer {
+        display: flex;
+        width: 130%;
+        justify-content: center;
+    }
+
+    .logo-footer img {
+        display: none;
+    }
+
+    .footer-content h2 {
+        font-size: 30px;
+        text-align: center;
+        position: relative;
+        left: -40px;
+    }
+
+    .services-footer{
+        display: none;
+    }
+
+    .footer-content a {
+        font-size: 19px;
+        text-align: center;
+        position: relative;
+        left: -20px;
+    }
+
+    .fa-envelope, .fa-instagram {
+        font-size: 36px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 10px;
+        position: relative;
+
+    }
+
+    .copyright {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .t3 , .t5{
+        margin-left: 40px;
+    }
 }
 
 @media (max-width: 580px) {
@@ -1089,6 +1211,66 @@ footer {
         font-size: 16px;
         width: 220px;
     }
+
+    
+    .crossed:after {
+        height: 4px;
+    }
+    
+    .crossed.animated:after {
+        width: 280px;
+    }
+    .all-services div{
+        margin-bottom: 20px;
+    }
+
+    footer {
+        display: flex;
+        width: 130%;
+        justify-content: center;
+    }
+
+    .logo-footer img {
+        display: none;
+    }
+
+    .footer-content h2 {
+        font-size: 30px;
+        text-align: center;
+        position: relative;
+        left: -40px;
+    }
+
+    .services-footer{
+        display: none;
+    }
+
+    .footer-content a {
+        font-size: 19px;
+        text-align: center;
+        position: relative;
+        left: -20px;
+    }
+
+    .fa-envelope, .fa-instagram {
+        font-size: 36px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 10px;
+        position: relative;
+
+    }
+
+    .copyright {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .t3 , .t5{
+        margin-left: 40px;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -1163,13 +1345,26 @@ footer {
     }
 
     .wcs-top p {
+
         font-size: 16px;
     }
+    .wcs-content .right .t1{
+        position: relative; 
+        left: 20px;
+     }
 
-    .wcs-content .right {
-        gap: 0.5rem;
+    .wcs-content .right .t3{
+        position: relative; 
+        left: 20px;
+     }
+    .wcs-content .right .t5{
+       position: relative; 
+       left: 20px;
     }
-
+    .offset{
+        position: relative;
+        margin-left: 10px;
+    }
     .crossed,
     .new {
         font-size: 1.8rem;
@@ -1233,38 +1428,81 @@ footer {
     }
 
     footer {
-        grid-template-columns: 1fr;
-        padding: 10px;
+        display: flex;
+        width: 130%;
+        justify-content: center;
     }
 
     .logo-footer img {
-        width: 80px;
-        height: 80px;
-        margin-left: auto;
-        margin-right: auto;
+        display: none;
     }
 
     .footer-content h2 {
         font-size: 20px;
         text-align: center;
+        position: relative;
+        left: -40px;
+    }
+
+    .services-footer{
+        display: none;
     }
 
     .footer-content a {
         font-size: 16px;
         text-align: center;
+        position: relative;
+        left: -20px;
     }
 
     .fa-envelope, .fa-instagram {
         font-size: 36px;
         margin-left: auto;
         margin-right: auto;
-        display: block;
+        text-align: center;
         margin-top: 10px;
+        position: relative;
+
     }
 
     .copyright {
         font-size: 14px;
         text-align: center;
         margin-top: 20px;
+    }
+
+    .all-services div{
+        margin-bottom: 20px;
+    }
+    .crossed{
+        font-size: 1.6rem;
+    }
+    .crossed:after {
+        height: 4px;
+    }
+    
+    .crossed.animated:after {
+        width: 220px;
+    }
+    
+
+}
+@media (max-width: 400px) {
+    
+
+    .crossed{
+        font-size: 1.35rem;
+    }
+    .crossed:after {
+        height: 3px;
+    }
+    
+    .crossed.animated:after {
+        width: 220px;
+    }
+    footer {
+        display: flex;
+        width: 130%;
+        justify-content: center;
     }
 }

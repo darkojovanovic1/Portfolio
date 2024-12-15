@@ -48,26 +48,26 @@
                 <h1>Custom Website Design</h1>
                 <p>Custom web development delivers a unique, scalable solution tailored to your needs, ensuring top
                     performance and security.</p>
-                <button>Learn more</button>
+                <button class="custom-wd">Learn more</button>
             </div>
             <div class="bottom">
                 <h1>Responsive Web Development</h1>
                 <p>Responsive web development makes your website look great on any device, adapting layouts for optimal
                     user experience across all screen sizes.</p>
-                <button>Learn more</button>
+                <button class="rsps-diz">Learn more</button>
             </div>
             <div class="bottom">
                 <h1>UI\UX Design</h1>
                 <p><br><br>UI/UX design creates intuitive and engaging user experiences, enhancing usability and
                     satisfaction.<br><br>
                 </p>
-                <button>Learn more</button>
+                <button class="ux-ui">Learn more</button>
             </div>
             <div class="right">
                 <h1>E-Commerce Development</h1>
                 <p>E-commerce development creates custom online stores with features tailored to your business,
                     providing a seamless shopping experience. </p>
-                <button>Learn more</button>
+                <button class="ecomc">Learn more</button>
             </div>
 
         </div>
@@ -79,9 +79,9 @@
         </div>
         <div class="wcs-content">
             <div class="left">
-                <img src="img/wcs-picture.png">
+                <img  src="img/wcs-picture.png">
             </div>
-            <div class="right">
+            <div class="right wcs-icons">
                 <div>
                     <img src="img/wcs-logo-1.png">
                     <h2 class="t1">Tailored solutions</h2>
@@ -132,22 +132,34 @@
         </div>
         <div class="portfolio-container swiper">
             <div class="swiper-wrapper">
-                <article class="portfolio-card swiper-slide">
-                    <img src="img/project1.jpg">
-                    <h3 class="portfolio-title">Electric Car Website</h3>
-                    <button class="first">View project <i class="fa-solid fa-code"></i></button>
-                </article>
-                <article class="portfolio-card swiper-slide">
-                    <img src="img/project2.jpg">
-                    <h3 class="portfolio-title">Real Estate Website</h3>
-                    <button class="second">View project <i class="fa-solid fa-code"></i></button>
-                </article>
-                <article class="portfolio-card swiper-slide">
-                    <img src="img/project3.jpg">
-                    <h3 class="portfolio-title">E-commerce Shoes Website</h3>
-                    <button class="third">View project <i class="fa-solid fa-code"></i></button>
-                </article>
+                <!-- Project 1 -->
+                <div class="portfolio-card swiper-slide">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">E-car dealership</h3>
+                        <button class="view-code" id="e-car-dealership">View site</button>
+                    </div>
+                    <img src="img/project1.jpg" alt="E-car dealership project">
+                </div>
+        
+                <!-- Project 2 -->
+                <div class="portfolio-card swiper-slide">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Real Estate Website</h3>
+                        <button class="view-code" id="real-estate">View site</button>
+                    </div>
+                    <img src="img/project2.jpg" alt="Real Estate Website project">
+                </div>
+        
+                <!-- Project 3 -->
+                <div class="portfolio-card swiper-slide">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">E-commerce Shoes Website</h3>
+                        <button class="view-code" id="e-commerce">View site</button>
+                    </div>
+                    <img src="img/project3.jpg" alt="E-commerce Shoes Website project">
+                </div>
             </div>
+        </div>
         </div>
     </div>
     <div class="order-website">
@@ -188,7 +200,7 @@
             </div>
             <div class="info-footer">
                 <h2>Contact</h2>
-                <i class="fa-regular fa-envelope"></i> <br>
+                <a href=""><i class="fa-regular fa-envelope"></i></a> <br>
                 <a href="https://www.instagram.com/pcs.development/"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
